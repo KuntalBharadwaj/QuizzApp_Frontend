@@ -1,0 +1,131 @@
+.PN {
+    margin-left: 2%;
+}
+.PA {
+    margin-left: 50%;
+}
+.active {
+    background: #51eeaa;
+}
+
+.pyramid-item {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin: 3vh 1vh 0 1vh;
+    border-radius: 4px;
+    border: 2px solid #51eeaa;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.quesans {
+    color: white;
+    position: absolute;
+    right: 37%;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 75px;
+    height: 75px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+    height: 10vh;
+    width: 50vw;
+    border-radius: 15px;
+    border: 2px solid white;
+    background: linear-gradient(rgba(3, 3, 102, 0.881),rgba(7, 7, 7, 0.352));
+}
+
+.Answer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    height: 7vh;
+    width: 45vw;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.Answer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    width: 20vw;
+    height: 6vh;
+    margin-top: 1vh;
+    border-radius: 15px;
+    border: 2px solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.384),rgba(58, 61, 243, 0.32));
+}
+
+.Answer :hover,
+.Answer .active {
+    background-color: blue;
+}
+
+.Answer .correct {
+    animation: correct 3s ease forwards;
+}
+
+.Answer .wrong {
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes correct {
+    0%,22%,42% {
+        background-color: blue;
+    }
+    20%,40%,60% {    
+        background: linear-gradient(rgba(0, 0, 0, 0.384),rgba(58, 61, 243, 0.32));
+    }
+    62%,100% {
+        background-color: rgb(0, 255, 72);
+    }
+}
+
+@keyframes wrong {
+    0%,22%,42% {
+        background-color: blue;
+    }
+    20%,40%,60% {    
+        background: linear-gradient(rgba(0, 0, 0, 0.384),rgba(58, 61, 243, 0.32));
+    }
+    62%,100% {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+.winnercontainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner {
+    
+}

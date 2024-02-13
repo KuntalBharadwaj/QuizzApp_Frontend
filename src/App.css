@@ -1,0 +1,14 @@
+.main {
+    height: 100vh;
+    position : relative;
+}
+.content {
+    width: 75%;
+    background: linear-gradient(rgba(79, 47, 184, 0.352), rgba(39, 20, 122, 0.47)),url("./assets/bg.jpg") center;
+    background-size: cover;
+}
+.pyramid {
+    width: 25%;
+    background-color: rgb(11, 11, 129);
+    color: white;
+}
